@@ -1,0 +1,92 @@
+{% extends 'index.html' %} {% block title %} Sign Up {% endblock title %} 
+{% block log %} <a href="/signin" class="navlog"> Sign In</a>{% endblock log %}
+{% block body %}
+
+<div class="pagebody">
+  <div class="container">
+    <div class="signin-signup">
+      <form class="signup" method="post" action="/signup">
+        {% csrf_token %}
+        <h2 class="title">Sign Up</h2>
+        <div class="userdata">
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="Create A Username"
+            required
+          />
+        </div>
+        <div class="userdata">
+          <i class="far fa-address-card"></i>
+          <input
+            type="text"
+            class="form-control"
+            id="fname" name="fname"
+            placeholder="Enter Your First Name"
+            required
+          />
+        </div>
+        <div class="userdata">
+          <i class="far fa-address-card"></i>
+          <input
+            type="text"
+            class="form-control"
+            id="lname"
+            name="lname"
+            placeholder="Enter Your Last Name"
+            required
+          />
+        </div>
+        <div class="userdata">
+          <i class="fas fa-address-card"></i>
+          <input
+            type="text"
+            class="form-control"
+            id="rollnumber"
+            name="rollnumber"
+            placeholder="Enter your IIT RollNumber"
+            required
+          />
+        </div>
+        <div class="userdata">
+          <i class="fas fa-mobile-alt"></i>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="Enter Your MobileNumber"
+          />
+        </div>
+        <div class="userdata">
+          <i class="fas fa-envelope"></i>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email Address"
+            required
+          />
+        </div>
+        <div class="userdata">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            class="form-control"
+            id="pass1"
+            name="pass1"
+            placeholder="Create Your Password"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

@@ -1,0 +1,26 @@
+{% extends 'index.html' %} {% block title %} SignIn {% endblock title %}
+{% block log %}<a href="/signup" class="navlog"> Sign Up</a>{% endblock log %}
+{%block body %}
+
+<div class="pagebody">
+  <div class="container">
+    <div class="signin-signup">
+      <form action="" class="sign-in" method="post">
+        {% csrf_token %}
+        <h2 class="title">Sign In</h2>
+        <div class="userdata">
+          <input type="text" placeholder="Username" id="username" name="username" />
+        </div>
+        <div class="userdata">
+          <input type="password" placeholder="Password" id="pass1" name="pass1" />
+        </div>
+        <button type="submit" class="btn btn-primary">LogIn</button>
+        
+        <a href="/signup" >create an account</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
+

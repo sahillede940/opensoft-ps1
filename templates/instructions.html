@@ -1,0 +1,68 @@
+{% extends 'index.html' %} {% block title %} HOMEPAGE {% endblock title %} 
+{%block log %}<a href="/signout" class="navlog">Sign Out</a>{% endblock log %} 
+{%block body %}
+<div class = "" >
+<h1 class = "" >Opensoft Assignment 2022</h1>
+<h2>
+    PROBLEM STATEMENT : ROOM ALLOCATION
+</h2>
+<p>
+    Design a room booking system to allocate and view rooms of students in a hall in IIT Kharagpur.
+</p>
+<h2>SKILLS</h2>
+<p>HTML, CSS, JavaScript, ReactJS, SQL, Python, Flask/Django
+</p>
+<h2>INSTRUCTIONS</h2>
+<ol>
+  <li>Create a Room booking system using Flask/Django and SQL/MongoDB.</li>
+  <li>
+    When we open the web app, the login page should appear(if the user is not
+    already logged in). If he has not yet registered, a button for sign-up
+    should be present to direct him to the signup page.
+  </li>
+  <li>
+    The user will sign up(register) for the first time and enter details like
+    his roll no., phone no and account password.
+  </li>
+  <li>
+    After signing-up is complete, redirect the user to the login page. After
+    successfully logging in, the home page appears, which represents the
+    allocation of rooms.
+  </li>
+  <li>
+    The allocation may be represented by a grid of boxes with room numbers
+    written over them. The rooms already allocated can be represented by red and
+    rest by grey.
+  </li>
+  <li>
+    When the users hover over a red room, names of the people to whom the room
+    is allocated, should be visible, with their contact details.
+  </li>
+  <li>
+    If the user clicks a grey room, its color should change temporarily to a
+    different color(maybe pink) and when he confirms it by clicking the
+    “confirm” button at the bottom of the page (which also needs to be
+    implemented), it should turn green.
+  </li>
+  <li>
+    Now whenever the user logs in, he must directly land on this home page, with
+    his allocated room in green, and all other rooms in grey(with the allocated
+    ones with a darker shade of grey). The user should still be able to see the
+    names of people to whom the room is allocated, when he hovers over a room.
+  </li>
+  <li>Consider all the rooms as single sharing.</li>
+</ol>
+
+<h2>Task 2</h2>
+<div>
+    <p></p>
+    In this task not all rooms are single sharing. You should keep some fixed rooms for double and triple sharing(you can keep the first 3 rooms in the grid as double sharing and last three rooms as triple sharing). Now when you hover over a non-single sharing room, it should show all the members who are currently occupying that particular room. Also if it is not filled to its capacity, the user should be able to select and confirm that room.PS-You should give different colors to double and triple rooms.</p>
+    <p>
+         This assignment is not as tough as it looks! Try building it in a step by step manner. We are always there to help you. You may keep the UI as simple as possible. Just a workable model will do! All the Best  </p>  
+</div>
+
+<div class="box">
+  sabdkakshdkahsdkj
+</div>
+</div>
+{% endblock body %}
